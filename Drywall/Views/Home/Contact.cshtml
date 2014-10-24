@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+<h2>@ViewBag.Title</h2>
+<script src="~/Scripts/ContactPage.js"></script>
+<hr />
+<address>
+    <label title="Phone">Phone:</label>
+    715.416.2477
+</address>
+
+<form class="form-horizontal well">
+    <fieldset>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Your Name:</label>
+            <div class="col-lg-9">
+                <input id="txtName" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Email Address:</label>
+            <div class="col-lg-9">
+                <input id="txtEmail" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Phone Number:</label>
+            <div class="col-lg-9">
+                <input id="txtPhone" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Subject:</label>
+            <div class="col-lg-9">
+                <select id="selSubject" class="form-control">
+                    <option>Project-Specific Question</option>
+                    <option>Bid</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Message:</label>
+            <div class="col-lg-9">
+                <textarea id="txtMessage" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Preferred Contact Method:</label>
+            <div class="col-lg-9">
+                <div class="radio">
+                    <label>
+                        <input id="rdPhone" type="radio" name="contactRadios" value="phone" checked="checked" />
+                        Phone
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input id="rdEmail" type="radio" name="contactRadios" value="email" />
+                        Email
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-11">
+            <button id="btnSubmit" class="btn btn-primary pull-right">Submit</button>
+        </div>
+    </fieldset>
+</form>
